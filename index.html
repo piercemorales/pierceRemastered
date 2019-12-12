@@ -11,8 +11,16 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header id="header" class="header">
     <div class="wrapper">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#header" class="nav__link">pierce</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">work</a></li>
+          <li class="nav__item"><a href="" class="nav__link">contact</a></li>
+        </ul>
+      </nav>
       <div class="headerTitle">
         <h1>Pierce Morales</h1>
         <h2>Front-End Developer</h2>
@@ -37,7 +45,7 @@
     </section>
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-      <h3 class="portfolio__h3">Portfolio</h3>
+      <h3 class="portfolio__h3">Work</h3>
       <!-- Option 1 - Choice -->
       <section class="portfolio__1 choice">
         <div class="wrapper">
@@ -229,7 +237,15 @@
     <!-- Skills Section Ends -->
     <!-- Contact Form Section Begins -->
     <section id="contact" class="contact">
-      
+      <h3 class="contact__h3">Contact</h3>
+      <form class="contact__form">
+        <label class="visuallyHidden" for="name">Name</label>
+        <input placeholder="Name" type="text" class="contact__input contact__input--name" required="">
+        <label class="visuallyHidden" for="email">Email</label>
+        <input placeholder="Email" type="text" class="contact__input contact__input--email" required="">
+        <label class="visuallyHidden" for="email">Email</label>
+        <input placeholder="Leave a Message" type="text" class="contact__input contact__input--email" required="">
+      </form>
     </section>
   </main>
 </body>

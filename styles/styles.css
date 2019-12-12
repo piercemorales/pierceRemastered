@@ -193,6 +193,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .about {
   height: 100vh;
+  background-image: url(../assets/aboutBackground.png);
 }
 
 header {
@@ -200,6 +201,10 @@ header {
   background-image: url("../assets/headerBackground.png");
   color: #E4E5E0;
   text-transform: uppercase;
+}
+
+.portfolio {
+  background-image: url(../assets/portfolioBackground.png);
 }
 
 a {
