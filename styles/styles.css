@@ -10,6 +10,14 @@ a {
   margin: 0;
 }
 
+.about, .portfolio, .skills, .contact {
+  background-image: url(../assets/mainBackground.png);
+}
+
+a {
+  text-decoration: none;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -193,20 +201,67 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .about {
   height: 100vh;
-  background-image: url(../assets/aboutBackground.png);
+  background-image: url(../assets/mainBackground.png);
 }
 
 header {
   height: 100vh;
+  width: 100%;
   background-image: url("../assets/headerBackground.png");
-  color: #E4E5E0;
   text-transform: uppercase;
+  font-family: "titling-gothic-fb-extended", sans-serif;
+  font-weight: 200;
 }
 
-.portfolio {
-  background-image: url(../assets/portfolioBackground.png);
+header .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-a {
-  cursor: pointer;
+header .nav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+header .nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-image: url(../assets/footerBackground.png);
 }
