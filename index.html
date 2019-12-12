@@ -13,27 +13,28 @@
 <body>
   <!-- Header -->
   <header id="header" class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#header" class="nav__link">pierce</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link">work</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">contact</a>
+        </li>
+      </ul>
+    </nav>
     <div class="wrapper">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#header" class="nav__link" target="_blank">pierce</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link" target="_blank">about</a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link" target="_blank">work</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__link" target="_blank">contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__container">
-        <h1 class="header__h1">Pierce Morales</h1>
-        <h2 class="header__h2">Front-End Developer</h2>
-        <a href="#projects">information <img src="assets/arrow.svg" alt=""></a>
+      <div class="headerContainer">
+        <h1 class="headerContainer__h1">Pierce Morales</h1>
+        <h2 class="headerContainer__h2">Front-End Developer </h2>
+        <p class="headerContainer__description">Based in Toronto</p>
+        <a href="#about" class="headerContainer__link">information<img src="assets/arrow.svg" alt=""></a>
       </div>
     </div>
   </header>
@@ -41,8 +42,8 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="wrapper">
-        <div class="about__container">
-          <h2 class="about__title">Lorem ipsum dolor sit amet.</h2>
+        <div class="aboutContainer">
+          <h2 class="about__h2">about</h2>
           <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum ipsa alias ex voluptas? Quidem, debitis! Ipsam consequatur dignissimos quidem, ab in veniam! Ipsam dolores nulla eligendi dolor hic laboriosam facere, obcaecati quo praesentium excepturi. Magnam eligendi fuga consequatur nobis!</p>
         </div>
         <div class="about__links">
@@ -53,7 +54,7 @@
     </section>
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-      <h3 class="portfolio__h3">Work</h3>
+      <h2 class="portfolio__h3">Work</h2>
       <!-- Option 1 - Choice -->
       <section class="portfolio__1 choice">
         <div class="wrapper">
@@ -244,7 +245,7 @@
     <!-- Skills Section Ends -->
     <!-- Contact Form Section Begins -->
     <section id="contact" class="contact">
-      <h3 class="contact__h3">Contact</h3>
+      <h2 class="contact__h2">Contact</h2>
       <form class="contact__form">
         <label class="visuallyHidden" for="name">Name</label>
         <input placeholder="Name" type="text" class="contact__input contact__input--name" required="">

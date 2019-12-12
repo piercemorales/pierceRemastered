@@ -1,39 +1,74 @@
 
 header {
+  position: relative;
   height: 100vh;
   width: 100%;
   background-image: url('../assets/headerBackground.png');
   text-transform: uppercase;
   font-family: $gothicFont;
-  font-weight: 200;
-  
+
   .wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
+}
 
-  .nav {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-    ul {
+
+.nav {
+    position: fixed;
     width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
+    &__list {
+      // position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      
     }
 }
+
+.nav__item {
+  position: relative;
+  width: 100%;
+
+
+  &:nth-child(1){
+    // position: absolute;
+    right:0px;
+  }
+
+  
 }
 
-.header__container {
+
+.headerContainer {
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
+  
+  &__h1, &__h2, &__description, &__link {
+    color: $thirdColor;
+  }
+  &__h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+  &__link {
+    position:absolute;
+    right: 100px;
+    bottom: 100px;
+  }
+  &__description {
+    letter-spacing: 1px;
+  }
 }
 
 

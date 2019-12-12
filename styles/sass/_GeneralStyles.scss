@@ -10,6 +10,10 @@ span,
 		margin: 0;
 }
 
+.wrapper {
+	margin: auto;
+	width: 80%;
+}
 
 .about, .portfolio, .skills, .contact {
   background-image: url(../assets/mainBackground.png)
@@ -17,5 +21,15 @@ span,
 
 a {
 	text-decoration: none;
+}
 
+li {
+	list-style: none;
+}
+
+h2 {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		font-family: $gothicFont;
+    letter-spacing: 1px;
 }
