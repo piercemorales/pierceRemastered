@@ -4,12 +4,13 @@
 }
 
 .aboutContainer {
-  padding: 100px 0px;
+  padding: 70px 0px;
   color: $secondColor;
 
   &__text {
     line-height: 2rem;
     font-size: 1rem;
+    font-family: $secondFont;
   }
 
   &__btn {

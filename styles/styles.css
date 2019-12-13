@@ -329,19 +329,22 @@ header .wrapper {
 .headerContainer__h1 {
   font-size: 3rem;
   margin-bottom: 50px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .headerContainer__link {
   position: absolute;
   right: 100px;
   bottom: 100px;
+  font-weight: 200;
   font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .headerContainer__h2 {
   letter-spacing: 1px;
   width: 500px;
+  font-weight: 200;
 }
 
 .about {
@@ -350,13 +353,14 @@ header .wrapper {
 }
 
 .aboutContainer {
-  padding: 100px 0px;
+  padding: 70px 0px;
   color: #69725D;
 }
 
 .aboutContainer__text {
   line-height: 2rem;
   font-size: 1rem;
+  font-family: "Inconsolata", monospace;
 }
 
 .aboutContainer__btn {
@@ -505,6 +509,7 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
   color: #69725D;
+  margin-bottom: 20px;
 }
 
 .skillItem__icon {
@@ -520,7 +525,7 @@ header .wrapper {
           align-items: center;
   width: 70px;
   height: 65px;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
 }
 
 .skillItem__icon i {
@@ -530,6 +535,14 @@ header .wrapper {
 .svgIcon {
   height: 64px;
   width: 64px;
+}
+
+.skillItem__text {
+  visibility: hidden;
+}
+
+.skillItem__text:hover {
+  visibility: hidden;
 }
 
 .contact {
