@@ -17,11 +17,18 @@
     justify-content: flex-end;
   }
   &__link {
+    font-family: $gothicFont;
     font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
     text-transform: uppercase;
-    box-shadow: -2px 2px 0px 0px;
     color:$secondColor;
     padding: 10px;
     margin-left: 50px;
+    transition: $transition;
+    
+    &:hover {
+      box-shadow: -1.5px 1.5px 0px 0px $secondColor;
+    }
   }
 }
