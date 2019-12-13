@@ -14,7 +14,7 @@
   <!-- Header -->
   <header id="header" class="header">
     <nav class="nav">
-      <ul class="nav__list">
+      <ul class="nav__list--top">
         <li class="nav__item">
           <a href="#header" class="nav__link">pierce</a>
         </li>
@@ -32,8 +32,9 @@
     <div class="wrapper">
       <div class="headerContainer">
         <h1 class="headerContainer__h1">Pierce Morales</h1>
-        <h2 class="headerContainer__h2">Front-End Developer </h2>
-        <p class="headerContainer__description">Based in Toronto</p>
+        <h2 class="headerContainer__h2">Front-End Developer
+          <span class="headerContainer__break">based in toronto</span>
+        </h2>
         <a href="#about" class="headerContainer__link">information<img src="assets/arrow.svg" alt=""></a>
       </div>
     </div>
@@ -43,24 +44,30 @@
     <section id="about" class="about">
       <div class="wrapper">
         <div class="aboutContainer">
-          <h2 class="about__h2">about</h2>
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum ipsa alias ex voluptas? Quidem, debitis! Ipsam consequatur dignissimos quidem, ab in veniam! Ipsam dolores nulla eligendi dolor hic laboriosam facere, obcaecati quo praesentium excepturi. Magnam eligendi fuga consequatur nobis!</p>
+          <h2 class="aboutContainer__h2">about</h2>
+          <p class="aboutContainer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum ipsa alias ex voluptas? Quidem, debitis! Ipsam consequatur dignissimos quidem, ab in veniam! Ipsam dolores nulla eligendi dolor hic laboriosam facere, obcaecati quo praesentium excepturi. Magnam eligendi fuga consequatur nobis!</p>
+          <p class="aboutContainer__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae fugit cupiditate deleniti sit, porro, quisquam veniam, ea quia ipsam est ipsa consectetur animi blanditiis hic id quas nam maiores. Quaerat, nisi distinctio provident libero aliquam id delectus alias repudiandae necessitatibus voluptatibus tenetur odit incidunt labore cupiditate explicabo, quam laboriosam doloribus?
+          </p>
         </div>
-        <div class="about__links">
-          <a href="#contact">contact</a>
-          <a href="assets/resumePierceMorales.pdf">resume</a>
+        <div class="aboutContainer__btn">
+          <a class="aboutContainer__link" href="#contact">contact</a>
+          <a class="aboutContainer__link" href="assets/resumePierceMorales.pdf">resume</a>
         </div>
       </div>
     </section>
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-      <h2 class="portfolio__h3">Work</h2>
+      <h2 class="portfolio__h2">Work</h2>
       <!-- Option 1 - Choice -->
       <section class="portfolio__1 choice">
+        <div class="imageContainer">
+          <img src="assets/Choice.png" alt="">
+        </div>
         <div class="wrapper">
           <div class="choice__info">
-            <h3 class="portfolio__h3">Choice</h3>
-            <h4 class="portfolio__h4">
+            <h3 class="portfolio__title">Choice</h3>
+            <h4 class="portfolio__subtitle">
               React
               <span class="divider">|</span>
               Firebase
@@ -72,10 +79,10 @@
               HTML5
             </h4>
             <p class="choice__description">A voting app where the user chooses between two options and sees how other visitors voted on a certain topic. Vote now and see if others voted with or against you! </p>
-          </div>
-          <div class="choice__link-container">
-              <a href="https://piercemorales.github.io/would-you-rather-game/" class="portfolio__link" target="_blank">live</a>
-              <a href="https://github.com/piercemorales/choice" class="portfolio__link" target="_blank">github</a>
+            <div class="choice__link-container">
+                <a href="https://piercemorales.github.io/would-you-rather-game/" class="portfolio__link" target="_blank">live</a>
+                <a href="https://github.com/piercemorales/choice" class="portfolio__link" target="_blank">github</a>
+            </div>
           </div>
         </div>
       </section>
@@ -83,9 +90,9 @@
       <!-- Option 2 - NEUSE -->
       <section class="portfolio__2 Neuse">
         <div class="wrapper">
-          <div class="restaurant__info">
-            <h3 class="portfolio__h3">Neuse</h3>
-            <h4 class="portfolio__h4">
+          <div class="neuse__info">
+            <h3 class="portfolio__title">Neuse</h3>
+            <h4 class="portfolio__subtitle">
               JavaScript
               <span class="divider">|</span>
               jQuery
@@ -96,20 +103,27 @@
               <span class="divider">|</span>
               Pair Programming
             </h4>
-          </div>
-          <div class="neuse__link-container">
-            <a href="https://piercemiko.github.io/pikoProjectFour/" class="portfolio__link" target="_blank">live</a>
-            <a href="https://github.com/PierceMiko/pikoProjectFour" class="portfolio__link" target="_blank">github</a>
+            <p class="choice__description">Looking for a new movie, book, author, or artist to discover but can't decide? Try this application out to get suggestions based on your choosing!</p>
+              <div class="neuse__link-container">
+                <a href="https://piercemiko.github.io/pikoProjectFour/" class="portfolio__link" target="_blank">live</a>
+                <a href="https://github.com/PierceMiko/pikoProjectFour" class="portfolio__link" target="_blank">github</a>
+              </div>
           </div>
         </div>
+                <div class="imageContainer">
+                  <img src="assets/Neuse.png" alt="">
+                </div>
       </section>
       <!-- End of Option 2 -->
       <!-- Option 3 - Dine and Dash -->
       <section class="portfolio__3 dnd">
+        <div class="imageContainer">
+          <img src="assets/Dine.png" alt="">
+        </div>
         <div class="wrapper">
-          <div class="dnd__info">
-            <h3 class="portfolio__h3">Dine and Dash</h3>
-            <h4 class="portfolio__h4">
+          <div class="dine__info">
+            <h3 class="portfolio__title">Dine and Dash</h3>
+            <h4 class="portfolio__subtitle">
               React
               <span class="divider">|</span>
               JavaScript
@@ -122,12 +136,13 @@
               <span class="divider">|</span>
               Mob Programming
             </h4>
-          </div>
-          <div class="dnd__link-container">
-            <a href="https://dineanddashjuno.github.io/projectSix/" class="portfolio__link"
-              target="_blank">live</a>
-            <a href="https://github.com/dineAndDashJuno/projectSix" class="portfolio__link"
-              target="_blank">github</a>
+            <p class="choice__description">Enter a location and get closeby restaurants around! You are also provided with any bike stations nearby!</p>
+              <div class="dnd__link-container">
+                <a href="https://dineanddashjuno.github.io/projectSix/" class="portfolio__link"
+                  target="_blank">live</a>
+                <a href="https://github.com/dineAndDashJuno/projectSix" class="portfolio__link"
+                  target="_blank">github</a>
+              </div>
           </div>
         </div>
       </section>
@@ -136,8 +151,8 @@
       <section class="portfolio__4 restaurant">
         <div class="wrapper">
           <div class="restaurant__info">
-            <h3 class="portfolio__h3">The Restaurant Mall</h3>
-            <h4 class="portfolio__h4">
+            <h3 class="portfolio__title">The Restaurant Mall</h3>
+            <h4 class="portfolio__subtitle">
               PSD Conversion
               <span class="divider">|</span>
               HTML5
@@ -148,13 +163,18 @@
               <span class="divider">|</span>
               Responsive
             </h4>
+            <p class="choice__description">A voting app where the user chooses between two options and sees how other visitors voted
+              on a certain topic. Vote now and see if others voted with or against you! </p>
+              <div class="restaurant__link-container">
+                <a href="https://piercemorales.github.io/project-two-pierce-morales/" class="portfolio__link"
+                  target="_blank">live</a>
+                <a href="https://github.com/piercemorales/project-two-pierce-morales" class="portfolio__link"
+                  target="_blank">github</a>
+              </div>
           </div>
-          <div class="restaurant__link-container">
-            <a href="https://piercemorales.github.io/project-two-pierce-morales/" class="portfolio__link"
-              target="_blank">live</a>
-            <a href="https://github.com/piercemorales/project-two-pierce-morales" class="portfolio__link"
-              target="_blank">github</a>
-          </div>
+        </div>
+        <div class="imageContainer">
+          <img src="assets/Restaurant.png" alt="">
         </div>
       </section>
     </section>

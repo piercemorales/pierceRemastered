@@ -6,9 +6,22 @@
 .aboutContainer {
   padding: 100px 0px;
   color: $secondColor;
-}
 
-.about__h2 {
-  // text-transform: uppercase;
-  
+  &__text {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: -2px 2px 0px 0px;
+    color:$secondColor;
+    padding: 10px;
+    margin-left: 50px;
+  }
 }

@@ -1,3 +1,7 @@
+body {
+	font-size: 125%;
+}
+
 ul, li,
 h1, h2, 
 h3, h4, 
@@ -11,12 +15,13 @@ span,
 }
 
 .wrapper {
-	margin: auto;
+	margin: 0 auto;
 	width: 80%;
+	max-width: 1400px;
 }
 
 .about, .portfolio, .skills, .contact {
-  background-image: url(../assets/mainBackground.png)
+	background-image: url(../assets/mainBackground.png);
 }
 
 a {
@@ -31,5 +36,7 @@ h2 {
 		font-size: 1.6rem;
 		text-transform: uppercase;
 		font-family: $gothicFont;
-    letter-spacing: 1px;
+		letter-spacing: 1px;
+		color: $secondColor;
 }
+

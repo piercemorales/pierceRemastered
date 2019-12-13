@@ -179,6 +179,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+body {
+  font-size: 125%;
+}
+
 ul, li,
 h1, h2,
 h3, h4,
@@ -192,8 +196,9 @@ a {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   width: 80%;
+  max-width: 1400px;
 }
 
 .about, .portfolio, .skills, .contact {
@@ -213,6 +218,7 @@ h2 {
   text-transform: uppercase;
   font-family: "titling-gothic-fb-wide", sans-serif;
   letter-spacing: 1px;
+  color: #69725D;
 }
 
 header {
@@ -235,12 +241,8 @@ header .wrapper {
           flex-direction: column;
 }
 
-.nav {
-  position: fixed;
-  width: 100%;
-}
-
 .nav__list {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,13 +260,47 @@ header .wrapper {
       align-content: space-between;
 }
 
+.nav__link {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: #69725D;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+}
+
+.nav__link:hover, .nav__link:focus {
+  -webkit-text-fill-color: #69725D;
+  -webkit-text-stroke-width: 0px;
+}
+
+.nav__link:active {
+  -webkit-text-fill-color: red;
+}
+
 .nav__item {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  margin: 50px;
 }
 
 .nav__item:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.nav__item:nth-child(2) {
+  left: 0px;
+  bottom: 0px;
+}
+
+.nav__item:nth-child(3) {
+  color: red;
+  top: 0px;
   right: 0px;
+}
+
+.nav__item:nth-child(4) {
+  right: 0px;
+  bottom: 0px;
 }
 
 .headerContainer {
@@ -293,16 +329,19 @@ header .wrapper {
 .headerContainer__h1 {
   font-size: 3rem;
   margin-bottom: 50px;
+  font-weight: normal;
 }
 
 .headerContainer__link {
   position: absolute;
   right: 100px;
   bottom: 100px;
+  font-size: 1rem;
 }
 
-.headerContainer__description {
+.headerContainer__h2 {
   letter-spacing: 1px;
+  width: 500px;
 }
 
 .about {
@@ -313,6 +352,98 @@ header .wrapper {
 .aboutContainer {
   padding: 100px 0px;
   color: #69725D;
+}
+
+.aboutContainer__text {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.aboutContainer__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aboutContainer__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: -2px 2px 0px 0px;
+          box-shadow: -2px 2px 0px 0px;
+  color: #69725D;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.portfolio {
+  font-family: "Inconsolata", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.portfolio__1, .portfolio__3 {
+  color: #69725D;
+}
+
+.portfolio__2, .portfolio__4 {
+  color: #AF890A;
+  text-align: right;
+}
+
+.portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0px;
+}
+
+.portfolio__1 .wrapper, .portfolio__2 .wrapper, .portfolio__3 .wrapper, .portfolio__4 .wrapper {
+  width: 45%;
+}
+
+.portfolio__1 .imageContainer, .portfolio__2 .imageContainer, .portfolio__3 .imageContainer, .portfolio__4 .imageContainer {
+  width: 55%;
+}
+
+.choice__info, .neuse__info, .dine__info, .restaurant__info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.choice__info h3, .choice__info h4, .neuse__info h3, .neuse__info h4, .dine__info h3, .dine__info h4, .restaurant__info h3, .restaurant__info h4 {
+  text-transform: uppercase;
+}
+
+.choice__info h3, .neuse__info h3, .dine__info h3, .restaurant__info h3 {
+  font-size: 1.7rem;
 }
 
 .footer {
