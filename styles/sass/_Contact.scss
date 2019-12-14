@@ -38,7 +38,10 @@
   border: none;
   padding: 10px;
   box-shadow: -1.5px 1.5px 0px 0px $secondColor;
-  position: relative;
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px $secondColor;
+  }
   &::placeholder {
     opacity: 1;
   }
