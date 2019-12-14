@@ -1,5 +1,4 @@
 .about {
-  height: 100vh;
   background-image: url(../assets/mainBackground.png);
 }
 
@@ -21,15 +20,15 @@
     font-family: $gothicFont;
     font-size: 1rem;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 300;
     text-transform: uppercase;
     color:$secondColor;
     padding: 10px;
     margin-left: 50px;
     transition: $transition;
     
-    &:hover {
-      box-shadow: -1.5px 1.5px 0px 0px $secondColor;
+    &:hover,&:focus {
+      color: lighten($secondColor, 35%);
     }
   }
 }

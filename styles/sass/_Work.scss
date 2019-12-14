@@ -2,7 +2,7 @@
   font-family: $secondFont;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   img {
     width: 100%;
@@ -11,15 +11,24 @@
 }
 
 .portfolio__link {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-  }
+  font-family: $gothicFont;
+  font-weight: 200;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: $transition;
+
+
+}
 
 .portfolio__1, .portfolio__3 {
   color: $secondColor;
   .portfolio__link {
     color:$secondColor;
     margin-right: 50px;
+        
+    &:hover,&:focus {
+      color: lighten($secondColor, 35%);
+    }
   }
 
 }
@@ -30,8 +39,11 @@
   .portfolio__link {
     color:$fourthColor;
     margin-left: 50px;
+        
+    &:hover,&:focus {
+      color: lighten($fourthColor, 35%);
+    }
   }
-  
 }
 
 .portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
@@ -54,7 +66,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px 50px;
 
     h3, h4 {
