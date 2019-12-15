@@ -80,7 +80,7 @@ header {
 
 
 .headerContainer {
-  // position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,8 +104,18 @@ header {
     font-weight: 200;
     font-size: 1rem;
     letter-spacing: 1px;
+    transition: $transition;
+    &:hover, &:focus {
+      color: darken($thirdColor, 35%);
+      img {
+        filter: saturate(10%) opacity(50%);
+
+
+      }
+    }
     img {
       height: 13px;
+      transition: $transition;  
     }
   }
   &__h2 {

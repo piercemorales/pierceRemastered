@@ -221,6 +221,22 @@ h2 {
   color: #69725D;
 }
 
+.cursorFilled, .cursorBorder {
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.cursorBorder {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d4a712;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
 header {
   position: relative;
   height: 100vh;
@@ -304,6 +320,7 @@ header .wrapper {
 }
 
 .headerContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,10 +356,23 @@ header .wrapper {
   font-weight: 200;
   font-size: 1rem;
   letter-spacing: 1px;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.headerContainer__link:hover, .headerContainer__link:focus {
+  color: #8f947f;
+}
+
+.headerContainer__link:hover img, .headerContainer__link:focus img {
+  -webkit-filter: saturate(10%) opacity(50%);
+          filter: saturate(10%) opacity(50%);
 }
 
 .headerContainer__link img {
   height: 13px;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .headerContainer__h2 {
@@ -358,11 +388,14 @@ header .wrapper {
 .aboutContainer {
   padding: 70px 0px;
   color: #69725D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .aboutContainer__text {
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Inconsolata", monospace;
 }
 
@@ -414,6 +447,7 @@ header .wrapper {
 }
 
 .portfolio__link {
+  position: relative;
   font-family: "titling-gothic-fb-wide", sans-serif;
   font-weight: 200;
   font-size: 1rem;
@@ -508,6 +542,7 @@ header .wrapper {
 }
 
 .skillItem {
+  position: relative;
   min-width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,6 +614,7 @@ header .wrapper {
 }
 
 .contact__form {
+  position: relative;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,7 +680,6 @@ header .wrapper {
 }
 
 .contact__input--message {
-  position: relative;
   width: 100%;
   resize: none;
 }

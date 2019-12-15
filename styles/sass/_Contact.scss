@@ -6,6 +6,8 @@
 }
 
 .contact__form {
+	position: relative;
+
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,6 @@
     opacity: 1;
   }
   &--message {
-    position: relative;
     width: 100%;
     resize: none;
   }

@@ -1,0 +1,31 @@
+
+.cursorFilled, .cursorBorder {
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+
+}
+// .cursorFilled {
+//   width: 15px;
+//   height: 15px;
+//   background: #d4a712;
+//   // animation: cursorAnim .5s infinite alternate;
+// }
+
+.cursorBorder {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d4a712;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+
+}
+
+// @keyframes cursorAnim {
+//   from{
+//     transform: scale(1);
+//   }
+//   to {
+//     transform: scale(.5);
+//   }
+// }
