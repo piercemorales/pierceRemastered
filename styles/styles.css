@@ -238,7 +238,6 @@ h2 {
 }
 
 header {
-  position: relative;
   height: 100vh;
   width: 100%;
   background-image: url("../assets/headerBackground.png");
@@ -257,9 +256,15 @@ header .wrapper {
           flex-direction: column;
 }
 
-.nav__list {
-  position: relative;
+.nav {
+  position: fixed;
   width: 100%;
+}
+
+.nav__list {
+  z-index: 10;
+  width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,11 +274,9 @@ header .wrapper {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav__link {
@@ -281,6 +284,7 @@ header .wrapper {
   letter-spacing: 2px;
   color: #69725D;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: #E4E5E0;
   -webkit-text-stroke-width: 1px;
 }
 
@@ -289,38 +293,15 @@ header .wrapper {
   -webkit-text-stroke-width: 0px;
 }
 
-.nav__link:active {
-  -webkit-text-fill-color: red;
-}
-
 .nav__item {
-  position: fixed;
   margin: 50px;
 }
 
-.nav__item:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-
-.nav__item:nth-child(2) {
-  left: 0px;
-  bottom: 0px;
-}
-
-.nav__item:nth-child(3) {
-  color: red;
-  top: 0px;
-  right: 0px;
-}
-
-.nav__item:nth-child(4) {
-  right: 0px;
-  bottom: 0px;
+.nav__item:nth-of-type(4) {
+  margin-right: 100px;
 }
 
 .headerContainer {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,9 +369,6 @@ header .wrapper {
 .aboutContainer {
   padding: 70px 0px;
   color: #69725D;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .aboutContainer__text {

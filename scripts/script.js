@@ -1,11 +1,8 @@
-// const cursor = document.querySelector('.cursor')
-
-// document.addEventListener('mousemove', e => {
-//   cursor.setAttribute('style', 'top: '+(e.pageY - 10)+'px; left: '+(e.pageX - 10)+'px;')
-// })
-
 $(document).ready(function () {
-  $(document).on('mousemove', (e) => { 
+
+  // Custom Cursor
+  // setting custom cursor coordinates on mouse location
+  $(document).on('mousemove', (e) => {
     $('.cursorFilled').css({
       top: e.pageY - 10,
       left: e.pageX - 10,
@@ -16,4 +13,11 @@ $(document).ready(function () {
       left: e.pageX - 20,
     });
   });
+
+
+
+
+
+
+  
 });
