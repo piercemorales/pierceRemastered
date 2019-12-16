@@ -19,7 +19,8 @@ $(document).ready(function () {
   // Animate on Scroll 
   AOS.init({
     duration: 2000,
-    disable: 'phone'
+    disable: 'phone',
+    once: true
   });
 
 

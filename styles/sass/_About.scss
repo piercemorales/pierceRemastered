@@ -9,12 +9,13 @@
 .aboutContainer {
   padding: 70px 0px;
   color: $secondColor;
-
-
   &__text {
     line-height: 2rem;
     font-size: 1.2rem;
     font-family: $secondFont;
+    &:first-child {
+      margin-bottom: 20px;
+    }
     a {
       color: $fourthColor;
     }

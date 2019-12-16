@@ -110,6 +110,7 @@
     }
     p {
       @include mqTablet {
+        line-height: 2rem;
         margin: 20px 0px;
       }
     }
