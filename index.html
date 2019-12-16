@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/emx7liy.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <!-- Header -->
@@ -56,7 +57,7 @@
             <a class="aboutContainer__link" href="#">resume</a>
           </div>
         </div>
-          <ul class="skills__list">
+          <ul class="skills__list" data-aos="fade-up">
             <li class="skillItem">
               <div class="skillItem__icon">
                 <i class="devicon-html5-plain"></i>
@@ -145,11 +146,11 @@
     <section class="portfolio" id="portfolio">
       <!-- Option 1 - Choice -->
       <section class="portfolio__1 choice">
-        <div class="imageContainer">
+        <div class="imageContainer" data-aos="fade-right">
           <img src="assets/Choice.png" alt="">
         </div>
         <div class="wrapper">
-          <div class="choice__info">
+          <div class="choice__info" data-aos="fade-left">
             <h3 class="portfolio__title">Choice</h3>
             <h4 class="portfolio__subtitle">
               React
@@ -174,7 +175,7 @@
       <!-- Option 2 - NEUSE -->
       <section class="portfolio__2 Neuse">
         <div class="wrapper">
-          <div class="neuse__info">
+          <div class="neuse__info" data-aos="fade-right">
             <h3 class="portfolio__title">Neuse</h3>
             <h4 class="portfolio__subtitle">
               JavaScript
@@ -194,18 +195,18 @@
               </div>
           </div>
         </div>
-                <div class="imageContainer">
+                <div class="imageContainer" data-aos="fade-left">
                   <img src="assets/Neuse.png" alt="">
                 </div>
       </section>
       <!-- End of Option 2 -->
       <!-- Option 3 - Dine and Dash -->
       <section class="portfolio__3 dnd">
-        <div class="imageContainer">
+        <div class="imageContainer" data-aos="fade-right">
           <img src="assets/Dine.png" alt="">
         </div>
         <div class="wrapper">
-          <div class="dine__info">
+          <div class="dine__info" data-aos="fade-left">
             <h3 class="portfolio__title">Dine and Dash</h3>
             <h4 class="portfolio__subtitle">
               React
@@ -234,7 +235,7 @@
       <!-- Option 4 - The Restaurant Mall -->
       <section class="portfolio__4 restaurant">
         <div class="wrapper">
-          <div class="restaurant__info">
+          <div class="restaurant__info" data-aos="fade-right">
             <h3 class="portfolio__title">The Restaurant Mall</h3>
             <h4 class="portfolio__subtitle">
               PSD Conversion
@@ -257,7 +258,7 @@
               </div>
           </div>
         </div>
-        <div class="imageContainer">
+        <div class="imageContainer" data-aos="fade-left">
           <img src="assets/Restaurant.png" alt="">
         </div>
       </section>
@@ -266,7 +267,7 @@
     <!-- Contact Form Section Begins -->
     <section id="contact" class="contact">
       <div class="wrapper">
-        <form class="contact__form" method="POST" action="http://www.focuspocus.io/magic/piercegmorales@gmail.com">
+        <form class="contact__form" method="POST" action="http://www.focuspocus.io/magic/piercegmorales@gmail.com" data-aos="fade-down">
           <div class="upperForm">
             <label class="visuallyHidden" for="name">Name</label>
             <input id="name" placeholder="Name" for="name" type="text" name="name" class="contact__input contact__input--name" required="">
