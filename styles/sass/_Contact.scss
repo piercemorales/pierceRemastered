@@ -1,5 +1,8 @@
 .contact {
   height: 80vh;
+  @include mqTablet {
+    height: auto;
+      }
   .wrapper {
     height: 100%;
   }
@@ -14,6 +17,10 @@
     padding: 50px;
     font-family: $secondFont;
     font-size: 1rem;
+    @include mqTablet {
+      padding:0 0 50px 0;
+      width: 100%;
+    }
     button {
       font-family: $gothicFont;
       font-weight: 200;
@@ -30,6 +37,7 @@
         color: lighten($secondColor, 35%);
       }
     }
+
 
 }
 

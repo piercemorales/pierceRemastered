@@ -19,6 +19,9 @@
 .socialList {
   display: flex;
 
+  @include mqTablet {
+        margin: 20px 0px;
+      }
 
   &__item {
     margin: 0 20px;

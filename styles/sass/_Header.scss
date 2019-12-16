@@ -1,11 +1,9 @@
-
 header {
   height: 100vh;
   width: 100%;
   background-image: url('../assets/headerBackground.png');
   text-transform: uppercase;
   font-family: $gothicFont;
-
   .wrapper {
     height: 100%;
     display: flex;
@@ -21,7 +19,6 @@ header {
     &__list {
       z-index: 10;
       width: 100%;
-
       position: relative;
       display: flex;
       flex-direction: row;
@@ -86,6 +83,10 @@ header {
     font-size: 1rem;
     letter-spacing: 1px;
     transition: $transition;
+    @include mobile {
+      right: 50px;
+      bottom: 50px;
+    }
     &:hover, &:focus {
       color: darken($thirdColor, 35%);
       img {

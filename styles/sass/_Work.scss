@@ -17,6 +17,7 @@
   font-size: 1rem;
   text-transform: uppercase;
   transition: $transition;
+
 }
 
 
@@ -35,11 +36,17 @@
     @include mqTablet {
       width: 80%;
     }
+    @include mobile {
+      width: 100%;
+    }
   }
   .imageContainer {
     width: 55%;
     @include mqTablet {
       width: 80%;
+    }
+    @include mobile {
+      width: 100%;
     }
   }
 }
@@ -51,7 +58,7 @@
     color:$secondColor;
     margin-right: 50px;
     @include mqTablet {
-      margin-right: 0px;
+      margin: 0px 20px;
     }
         
     &:hover,&:focus {
@@ -72,7 +79,7 @@
     color:$fourthColor;
     margin-left: 50px;
     @include mqTablet {
-      margin-left: 0px;
+      margin: 0px 20px;
     }
         
     &:hover,&:focus {
@@ -97,6 +104,14 @@
     
     h3 {
       font-size: 1.7rem;
+      @include mqTablet {
+        margin: 20px 0px;
+      }
+    }
+    p {
+      @include mqTablet {
+        margin: 20px 0px;
+      }
     }
   }
 }

@@ -366,6 +366,13 @@ header .wrapper {
   transition: ease-in-out 0.2s;
 }
 
+@media (max-width: 540px) {
+  .headerContainer__link {
+    right: 50px;
+    bottom: 50px;
+  }
+}
+
 .headerContainer__link:hover, .headerContainer__link:focus {
   color: #8f947f;
 }
@@ -502,6 +509,12 @@ header .wrapper {
   }
 }
 
+@media (max-width: 540px) {
+  .portfolio__1 .wrapper, .portfolio__2 .wrapper, .portfolio__3 .wrapper, .portfolio__4 .wrapper {
+    width: 100%;
+  }
+}
+
 .portfolio__1 .imageContainer, .portfolio__2 .imageContainer, .portfolio__3 .imageContainer, .portfolio__4 .imageContainer {
   width: 55%;
 }
@@ -509,6 +522,12 @@ header .wrapper {
 @media (max-width: 940px) {
   .portfolio__1 .imageContainer, .portfolio__2 .imageContainer, .portfolio__3 .imageContainer, .portfolio__4 .imageContainer {
     width: 80%;
+  }
+}
+
+@media (max-width: 540px) {
+  .portfolio__1 .imageContainer, .portfolio__2 .imageContainer, .portfolio__3 .imageContainer, .portfolio__4 .imageContainer {
+    width: 100%;
   }
 }
 
@@ -523,7 +542,7 @@ header .wrapper {
 
 @media (max-width: 940px) {
   .portfolio__1 .portfolio__link, .portfolio__3 .portfolio__link {
-    margin-right: 0px;
+    margin: 0px 20px;
   }
 }
 
@@ -553,7 +572,7 @@ header .wrapper {
 
 @media (max-width: 940px) {
   .portfolio__2 .portfolio__link, .portfolio__4 .portfolio__link {
-    margin-left: 0px;
+    margin: 0px 20px;
   }
 }
 
@@ -582,6 +601,18 @@ header .wrapper {
 
 .choice__info h3, .neuse__info h3, .dine__info h3, .restaurant__info h3 {
   font-size: 1.7rem;
+}
+
+@media (max-width: 940px) {
+  .choice__info h3, .neuse__info h3, .dine__info h3, .restaurant__info h3 {
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 940px) {
+  .choice__info p, .neuse__info p, .dine__info p, .restaurant__info p {
+    margin: 20px 0px;
+  }
 }
 
 .skills__list {
@@ -672,6 +703,12 @@ header .wrapper {
   height: 80vh;
 }
 
+@media (max-width: 940px) {
+  .contact {
+    height: auto;
+  }
+}
+
 .contact .wrapper {
   height: 100%;
 }
@@ -690,6 +727,13 @@ header .wrapper {
   padding: 50px;
   font-family: "Inconsolata", monospace;
   font-size: 1rem;
+}
+
+@media (max-width: 940px) {
+  .contact__form {
+    padding: 0 0 50px 0;
+    width: 100%;
+  }
 }
 
 .contact__form button {
@@ -805,6 +849,12 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 940px) {
+  .socialList {
+    margin: 20px 0px;
+  }
 }
 
 .socialList__item {
