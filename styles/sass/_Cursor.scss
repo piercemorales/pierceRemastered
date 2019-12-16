@@ -5,26 +5,13 @@
   pointer-events: none;
 
 }
-// .cursorFilled {
-//   width: 10px;
-//   height: 10px;
-//   background: #d4a712;
-// }
-
 .cursorBorder {
   width: 40px;
   height: 40px;
   border: 2px solid #d4a712;
   transition-duration: 0.7s;
   transition-timing-function: ease-out;
-
+  @include mobile {
+    display: none;
+  }
 }
-
-// @keyframes cursorAnim {
-//   from{
-//     transform: scale(1);
-//   }
-//   to {
-//     transform: scale(.5);
-//   }
-// }

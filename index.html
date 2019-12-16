@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="https://use.typekit.net/emx7liy.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="icon" type="image" href="assets/favicon.png">
 </head>
 <body>
   <!-- Header -->
   <header id="header" class="header">
-    <div class="cursorFilled"></div>
+        <a href="#about" class="headerContainer__link">information<img src="assets/arrow.svg" alt=""></a>
     <div class="cursorBorder"></div>
     <div class="wrapper">
       <nav class="nav">
@@ -26,6 +27,9 @@
             <a href="#portfolio" class="nav__link">work</a>
           </li>
           <li class="nav__item">
+            <a href="#skills" class="nav__link">skills</a>
+          </li>
+          <li class="nav__item">
             <a href="#contact" class="nav__link">contact</a>
           </li>
         </ul>
@@ -35,7 +39,6 @@
         <h2 class="headerContainer__h2">Front-End Developer
           <span class="headerContainer__break">based in toronto</span>
         </h2>
-        <a href="#about" class="headerContainer__link">information<img src="assets/arrow.svg" alt=""></a>
       </div>
     </div>
     
@@ -46,6 +49,7 @@
     <section id="about" class="about">
       <div class="wrapper" >
         <div class="aboutContainer" data-aos="fade-up">
+          <h2 class="sectionTitle">about</h2>
           <p class="aboutContainer__text">Hi! I'm Pierce Morales and I’m a front-end developer with a background of logical problem solving and a strong passion for design. I love building
           beautiful web applications that are accessible to all users and I care deeply about overall user experience. I have
           strong communication skills and strive for satisfaction in a fast-paced group environment. 
@@ -54,97 +58,15 @@
             In my spare time, away from coding, I am most likely playing volleyball, <a href="https://www.youtube.com/watch?v=mB6hKD9DQho" target="_blank">9-man volleyball</a>, or watching movies!
           </p>
           <div class="aboutContainer__btn">
-            <a class="aboutContainer__link" href="#">resume</a>
+            <!-- <a class="aboutContainer__link" href="#">resume</a> -->
           </div>
         </div>
-          <ul class="skills__list" data-aos="fade-up">
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-html5-plain"></i>
-                <p class="skillItem__text">
-                  HTML5
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-css3-plain"></i>
-                <p class="skillItem__text">
-                  CSS3
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-sass-plain"></i>
-                <p class="skillItem__text">
-                  Sass
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-javascript-plain"></i>
-                <p class="skillItem__text">
-                  Javascript
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <img class="svgIcon" src="./assets/jquery.svg" alt="jquery Icon">
-                </svg>
-                <p class="skillItem__text">
-                  jQuery
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-github-plain"></i>
-                <p class="skillItem__text">
-                  Github
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-git-plain"></i>
-                <p class="skillItem__text">
-                  Git
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <i class="devicon-react-plain"></i>
-                <p class="skillItem__text">
-                  React
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <img class="svgIcon fireBase" src="./assets/fireBase.svg" alt="firebase Icon">
-                <p class="skillItem__text">
-                  Firebase
-                </p>
-              </div>
-            </li>
-            <li class="skillItem">
-              <div class="skillItem__icon">
-                <img class="svgIcon" src="./assets/responsive.svg" alt=" w3c icon">
-                <p class="skillItem__text">
-                  Responsive
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      </div>
     </section>
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
       <!-- Option 1 - Choice -->
+          <h2 class="sectionTitle">work</h2>
       <section class="portfolio__1 choice">
         <div class="imageContainer" data-aos="fade-right">
           <img src="assets/Choice.png" alt="">
@@ -264,18 +186,111 @@
       </section>
     </section>
     <!-- Portfolio Section Ends -->
+    <!-- Skills Section Begins -->
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h2 class="sectionTitle">skills</h2>
+        <div class="skillContainer">
+          <ul class="skills__list" data-aos="fade-up">
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-html5-plain"></i>
+                <p class="skillItem__text">
+                  HTML5
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-css3-plain"></i>
+                <p class="skillItem__text">
+                  CSS3
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-sass-plain"></i>
+                <p class="skillItem__text">
+                  Sass
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-javascript-plain"></i>
+                <p class="skillItem__text">
+                  Javascript
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <img class="svgIcon" src="./assets/jquery.svg" alt="jquery Icon">
+                </svg>
+                <p class="skillItem__text">
+                  jQuery
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-github-plain"></i>
+                <p class="skillItem__text">
+                  Github
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-git-plain"></i>
+                <p class="skillItem__text">
+                  Git
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <i class="devicon-react-plain"></i>
+                <p class="skillItem__text">
+                  React
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <img class="svgIcon fireBase" src="./assets/fireBase.svg" alt="firebase Icon">
+                <p class="skillItem__text">
+                  Firebase
+                </p>
+              </div>
+            </li>
+            <li class="skillItem">
+              <div class="skillItem__icon">
+                <img class="svgIcon" src="./assets/responsive.svg" alt=" w3c icon">
+                <p class="skillItem__text">
+                  Responsive
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section Ends -->
     <!-- Contact Form Section Begins -->
     <section id="contact" class="contact">
+      <h2 class="sectionTitle">contact</h2>
       <div class="wrapper">
         <form class="contact__form" method="POST" action="http://www.focuspocus.io/magic/piercegmorales@gmail.com" data-aos="fade-down">
           <div class="upperForm">
             <label class="visuallyHidden" for="name">Name</label>
-            <input id="name" placeholder="Name" for="name" type="text" name="name" class="contact__input contact__input--name" required="">
+            <input id="name" placeholder="Name" type="text" name="name" class="contact__input contact__input--name" required="">
             <label class="visuallyHidden" for="email">Email</label>
-            <input id="email" placeholder="Email" for="email" type="email" name="email" class="contact__input contact__input--email" required="">
+            <input id="email" placeholder="Email" type="email" name="email" class="contact__input contact__input--email" required="">
           </div>
           <label class="visuallyHidden" for="message">Message</label>
-          <textarea class="contact__input contact__input--message" for="message" name="message" id="message" cols="30" rows="10" placeholder="Leave a Message"></textarea>
+          <textarea class="contact__input contact__input--message" name="message" id="message" cols="30" rows="10" placeholder="Leave a Message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>

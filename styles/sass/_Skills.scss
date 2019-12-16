@@ -1,3 +1,17 @@
+.skills {
+  // height: 60vh;
+  padding: 100px 0px;
+  @include mobile {
+    height: auto;
+  }
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
 .skills__list {
   display: flex;
   flex-direction: row;
