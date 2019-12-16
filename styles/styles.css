@@ -683,7 +683,7 @@ header .wrapper {
 }
 
 .skills {
-  padding: 100px 0px;
+  padding: 40px 0px;
 }
 
 @media (max-width: 540px) {
@@ -797,7 +797,7 @@ header .wrapper {
 }
 
 .contact {
-  padding: 100px 0px;
+  padding: 40px 0px;
 }
 
 @media (max-width: 940px) {
