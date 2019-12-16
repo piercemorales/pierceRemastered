@@ -229,8 +229,8 @@ h2 {
 
 .sectionTitle {
   font-size: 2rem;
-  font-weight: 400;
-  padding: 30px 0px;
+  font-weight: 200;
+  padding: 30px 0px 70px 0px;
   text-align: center;
 }
 
@@ -465,10 +465,6 @@ header .wrapper {
 .aboutContainer {
   padding: 70px 0px;
   color: #69725D;
-}
-
-.aboutContainer .sectionTitle {
-  padding: 30px 0px 70px 0px;
 }
 
 .aboutContainer__text {
@@ -911,7 +907,7 @@ header .wrapper {
 
 .upperForm input {
   width: calc(50% - 20px);
-  margin: 40px 20px;
+  margin: 00px 20px 40px 20px;
 }
 
 @media (max-width: 540px) {
