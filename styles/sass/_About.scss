@@ -1,15 +1,23 @@
 .about {
   background-image: url(../assets/mainBackground.png);
+    .wrapper{
+    width: 80%;
+    max-width: 900px;
+  }
 }
 
 .aboutContainer {
   padding: 70px 0px;
   color: $secondColor;
 
+
   &__text {
     line-height: 2rem;
     font-size: 1.2rem;
     font-family: $secondFont;
+    a {
+      color: $fourthColor;
+    }
   }
 
   &__btn {

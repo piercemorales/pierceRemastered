@@ -15,7 +15,7 @@ header {
 
 
 .nav {
-  position: fixed;
+  // position: fixed;
       width: 100%;
 
     &__list {
@@ -27,34 +27,38 @@ header {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-end;
+      @include mqTablet {
+        justify-content: center;
+      }
         
     }
     
     &__link {
-      font-size: 1.3rem;
-      letter-spacing: 2px;
+      font-size: 1rem;
+      font-weight: 200;
+      letter-spacing: 1px;
       color: $secondColor;
-      -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      transition: $transition;
         -webkit-text-fill-color: $thirdColor;
-
-      -webkit-text-stroke-width: 1px;
-
       &:hover, &:focus {
-        -webkit-text-fill-color: $secondColor;
-        -webkit-text-stroke-width: 0px;
+        -webkit-text-fill-color: #8f947f;
       }
   }
 }
 
 .nav__item {
   // position: fixed;
-  margin: 50px;
-
-
-  &:nth-of-type(4){
-    margin-right: 100px;
+  margin: 20px 50px;
+  @include mqTablet {
+    margin: 20px;
   }
 
+  &:nth-of-type(3){
+    margin-right: 0px;
+    @include mqTablet {
+      margin-right: 20px;
+    }
+} 
 }
 
 

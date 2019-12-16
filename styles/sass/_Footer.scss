@@ -9,16 +9,26 @@
     color: $thirdColor;
     text-transform: uppercase;
     padding: 50px 0px;
+    @include mqTablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 }
 
 .socialList {
   display: flex;
 
+
   &__item {
     margin: 0 20px;
     &:nth-of-type(3) {
       margin-right: 0px;
+    }
+    @include mqTablet {
+      &:nth-of-type(3) {
+        margin-right: 20px;
+      }
     }
   }
 

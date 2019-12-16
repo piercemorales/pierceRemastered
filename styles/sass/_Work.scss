@@ -17,46 +17,67 @@
   font-size: 1rem;
   text-transform: uppercase;
   transition: $transition;
-
-
 }
+
+
+
+.portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0px;
+    @include mqTablet {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .wrapper {
+    width: 45%;
+    @include mqTablet {
+      width: 80%;
+    }
+  }
+  .imageContainer {
+    width: 55%;
+    @include mqTablet {
+      width: 80%;
+    }
+  }
+}
+
 
 .portfolio__1, .portfolio__3 {
   color: $secondColor;
   .portfolio__link {
     color:$secondColor;
     margin-right: 50px;
+    @include mqTablet {
+      margin-right: 0px;
+    }
         
     &:hover,&:focus {
       color: lighten($secondColor, 35%);
     }
   }
-
 }
+
 
 .portfolio__2, .portfolio__4 {
   color: $fourthColor;
   text-align: right;
+  @include mqTablet {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
   .portfolio__link {
     color:$fourthColor;
     margin-left: 50px;
+    @include mqTablet {
+      margin-left: 0px;
+    }
         
     &:hover,&:focus {
       color: lighten($fourthColor, 35%);
     }
-  }
-}
-
-.portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
-
-  display: flex;
-  padding: 100px 0px;
-
-  .wrapper {
-    width: 45%;
-  }
-  .imageContainer {
-    width: 55%;
   }
 }
 
