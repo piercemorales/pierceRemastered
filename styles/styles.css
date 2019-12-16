@@ -289,7 +289,8 @@ header .wrapper {
 
 .nav__list {
   z-index: 10;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,9 +307,9 @@ header .wrapper {
 
 @media (max-width: 940px) {
   .nav__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -317,6 +318,7 @@ header .wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 90%;
   }
 }
 
@@ -346,7 +348,7 @@ header .wrapper {
 
 @media (max-width: 940px) {
   .nav__item {
-    margin: 20px;
+    margin: 20px 0px;
   }
 }
 
