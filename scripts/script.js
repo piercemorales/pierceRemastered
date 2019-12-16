@@ -4,8 +4,8 @@ $(document).ready(function () {
   // setting custom cursor coordinates on mouse location
   $(document).on('mousemove', (e) => {
     $('.cursorFilled').css({
-      top: e.pageY - 10,
-      left: e.pageX - 10,
+      top: e.pageY - 7,
+      left: e.pageX - 7,
     });
 
     $('.cursorBorder').css({

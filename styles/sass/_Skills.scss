@@ -20,6 +20,9 @@
   color: $secondColor;
   margin-bottom: 20px;
   transition: $transition;
+  @include mobile {
+    width: 50%;
+  }
     &:hover {
       .skillItem__text{
         opacity: 1;
