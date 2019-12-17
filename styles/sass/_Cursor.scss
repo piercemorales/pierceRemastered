@@ -1,11 +1,7 @@
-
-.cursorFilled, .cursorBorder {
+.cursorBorder {
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
-
-}
-.cursorBorder {
   width: 40px;
   height: 40px;
   border: 2px solid #d4a712;

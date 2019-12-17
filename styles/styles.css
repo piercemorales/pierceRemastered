@@ -181,11 +181,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 125%;
-  overflow-x: hidden;
 }
 
 ul, li,
@@ -234,13 +234,10 @@ h2 {
   text-align: center;
 }
 
-.cursorFilled, .cursorBorder {
+.cursorBorder {
   border-radius: 50%;
   position: absolute;
   pointer-events: none;
-}
-
-.cursorBorder {
   width: 40px;
   height: 40px;
   border: 2px solid #d4a712;
@@ -389,7 +386,7 @@ header .wrapper {
 
 .headerContainer__h1 {
   font-size: 3rem;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-weight: 400;
 }
 
@@ -402,8 +399,8 @@ header .wrapper {
 .headerContainer__link {
   z-index: 10;
   position: absolute;
-  right: 100px;
-  bottom: 100px;
+  right: 50px;
+  bottom: 50px;
   font-weight: 200;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -413,8 +410,7 @@ header .wrapper {
 
 @media (max-width: 540px) {
   .headerContainer__link {
-    right: 50px;
-    bottom: 50px;
+    font-size: 0.8rem;
   }
 }
 
@@ -438,6 +434,7 @@ header .wrapper {
   letter-spacing: 1px;
   width: 500px;
   font-weight: 200;
+  line-height: 2.5rem;
 }
 
 @media (max-width: 540px) {
@@ -463,8 +460,35 @@ header .wrapper {
 }
 
 .aboutContainer {
-  padding: 70px 0px;
+  padding: 40px 0px;
   color: #69725D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .portrait {
+  margin: 0 auto 70px auto;
+  width: 30%;
+}
+
+@media (max-width: 540px) {
+  .aboutContainer .portrait {
+    width: 60%;
+  }
+}
+
+.aboutContainer .portrait img {
+  width: 100%;
+  -webkit-box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
+          box-shadow: inset 0 2px 0px #dcffa6, 0 2px 5px #000;
 }
 
 .aboutContainer__text {
@@ -479,6 +503,30 @@ header .wrapper {
 
 .aboutContainer__text a {
   color: #af890a;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.aboutContainer__text a:hover {
+  color: #dfaf0d;
+}
+
+.aboutContainer__text a:hover::before {
+  opacity: 0.5;
+}
+
+.aboutContainer__text a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: 5px;
+  background: #af890a;
+  display: inline-block;
+  opacity: 0.3;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .aboutContainer__btn {
@@ -529,9 +577,9 @@ header .wrapper {
 
 .portfolio__link {
   position: relative;
-  font-family: "titling-gothic-fb-wide", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
@@ -558,6 +606,12 @@ header .wrapper {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
+    padding: 50px 0px;
   }
 }
 
@@ -604,6 +658,7 @@ header .wrapper {
 .portfolio__1 .portfolio__link, .portfolio__3 .portfolio__link {
   color: #69725D;
   margin-right: 50px;
+  border-bottom: 2px solid #af890a;
 }
 
 @media (max-width: 940px) {
@@ -614,6 +669,7 @@ header .wrapper {
 
 .portfolio__1 .portfolio__link:hover, .portfolio__1 .portfolio__link:focus, .portfolio__3 .portfolio__link:hover, .portfolio__3 .portfolio__link:focus {
   color: #c2c7ba;
+  border-bottom: 2px solid #f7d974;
 }
 
 .portfolio__2, .portfolio__4 {
@@ -634,6 +690,7 @@ header .wrapper {
 .portfolio__2 .portfolio__link, .portfolio__4 .portfolio__link {
   color: #af890a;
   margin-left: 50px;
+  border-bottom: 2px solid #69725D;
 }
 
 @media (max-width: 940px) {
@@ -644,6 +701,7 @@ header .wrapper {
 
 .portfolio__2 .portfolio__link:hover, .portfolio__2 .portfolio__link:focus, .portfolio__4 .portfolio__link:hover, .portfolio__4 .portfolio__link:focus {
   color: #f7d974;
+  border-bottom: 2px solid #c2c7ba;
 }
 
 .choice__info, .neuse__info, .dine__info, .restaurant__info {
@@ -673,6 +731,10 @@ header .wrapper {
   .choice__info h3, .neuse__info h3, .dine__info h3, .restaurant__info h3 {
     margin: 20px 0px;
   }
+}
+
+.choice__info h4, .neuse__info h4, .dine__info h4, .restaurant__info h4 {
+  font-weight: normal;
 }
 
 @media (max-width: 940px) {
@@ -845,10 +907,15 @@ header .wrapper {
   margin-top: 50px;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-bottom: 2px solid #69725D;
 }
 
 .contact__form button:hover, .contact__form button:focus {
   color: #c2c7ba;
+  border-bottom: 2px solid #c2c7ba;
 }
 
 .contact__input {
@@ -860,7 +927,7 @@ header .wrapper {
 }
 
 .contact__input:focus {
-  background: rgba(105, 114, 93, 0.692);
+  background: rgba(105, 114, 93, 0.4);
   color: #222;
 }
 
