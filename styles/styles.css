@@ -335,7 +335,27 @@ header .wrapper {
 }
 
 .nav__link:hover, .nav__link:focus {
-  color: #8f947f;
+  color: #fcfcfc;
+}
+
+.nav__link:hover::before, .nav__link:focus::before {
+  opacity: 0.4;
+  left: -10px;
+  height: 5px;
+}
+
+.nav__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: 5px;
+  background: #e4e5e0;
+  display: inline-block;
+  opacity: 0.3;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .nav__item {
@@ -414,12 +434,32 @@ header .wrapper {
 }
 
 .headerContainer__link:hover, .headerContainer__link:focus {
-  color: #8f947f;
+  color: #fcfcfc;
 }
 
 .headerContainer__link:hover img, .headerContainer__link:focus img {
   -webkit-filter: saturate(10%) opacity(50%);
           filter: saturate(10%) opacity(50%);
+}
+
+.headerContainer__link:hover::before, .headerContainer__link:focus::before {
+  opacity: 0.4;
+  left: -10px;
+  height: 5px;
+}
+
+.headerContainer__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: 5px;
+  background: #e4e5e0;
+  display: inline-block;
+  opacity: 0.3;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .headerContainer__link img {
@@ -506,12 +546,14 @@ header .wrapper {
   transition: ease-in-out 0.2s;
 }
 
-.aboutContainer__text a:hover {
+.aboutContainer__text a:hover, .aboutContainer__text a:focus {
   color: #dfaf0d;
 }
 
-.aboutContainer__text a:hover::before {
-  opacity: 0.5;
+.aboutContainer__text a:hover::before, .aboutContainer__text a:focus::before {
+  opacity: 0.4;
+  left: -10px;
+  height: 5px;
 }
 
 .aboutContainer__text a::before {
@@ -581,6 +623,24 @@ header .wrapper {
   font-weight: 200;
   font-size: 1.3rem;
   text-transform: uppercase;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.portfolio__link:hover::before, .portfolio__link:focus::before {
+  opacity: 0.4;
+  height: 5px;
+}
+
+.portfolio__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: 5px;
+  display: inline-block;
+  opacity: 0.3;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
@@ -658,7 +718,6 @@ header .wrapper {
 .portfolio__1 .portfolio__link, .portfolio__3 .portfolio__link {
   color: #69725D;
   margin-right: 50px;
-  border-bottom: 2px solid #af890a;
 }
 
 @media (max-width: 940px) {
@@ -668,8 +727,27 @@ header .wrapper {
 }
 
 .portfolio__1 .portfolio__link:hover, .portfolio__1 .portfolio__link:focus, .portfolio__3 .portfolio__link:hover, .portfolio__3 .portfolio__link:focus {
-  color: #c2c7ba;
-  border-bottom: 2px solid #f7d974;
+  color: #a9b09e;
+}
+
+.portfolio__1 .portfolio__link:hover::before, .portfolio__1 .portfolio__link:focus::before, .portfolio__3 .portfolio__link:hover::before, .portfolio__3 .portfolio__link:focus::before {
+  opacity: 0.4;
+  height: 5px;
+  left: -10px;
+}
+
+.portfolio__1 .portfolio__link::before, .portfolio__3 .portfolio__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: 5px;
+  display: inline-block;
+  opacity: 0.3;
+  background: #69725D;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .portfolio__2, .portfolio__4 {
@@ -690,7 +768,6 @@ header .wrapper {
 .portfolio__2 .portfolio__link, .portfolio__4 .portfolio__link {
   color: #af890a;
   margin-left: 50px;
-  border-bottom: 2px solid #69725D;
 }
 
 @media (max-width: 940px) {
@@ -700,8 +777,27 @@ header .wrapper {
 }
 
 .portfolio__2 .portfolio__link:hover, .portfolio__2 .portfolio__link:focus, .portfolio__4 .portfolio__link:hover, .portfolio__4 .portfolio__link:focus {
-  color: #f7d974;
-  border-bottom: 2px solid #c2c7ba;
+  color: #dfaf0d;
+}
+
+.portfolio__2 .portfolio__link:hover::before, .portfolio__2 .portfolio__link:focus::before, .portfolio__4 .portfolio__link:hover::before, .portfolio__4 .portfolio__link:focus::before {
+  opacity: 0.4;
+  height: 5px;
+  left: 10px;
+}
+
+.portfolio__2 .portfolio__link::before, .portfolio__4 .portfolio__link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -2px;
+  left: -5px;
+  display: inline-block;
+  opacity: 0.3;
+  background: #af890a;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .choice__info, .neuse__info, .dine__info, .restaurant__info {

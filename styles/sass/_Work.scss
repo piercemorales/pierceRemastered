@@ -18,6 +18,23 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   transition: $transition;
+      &:hover::before,
+      &:focus::before {
+        opacity: 0.4;
+        height: 5px;
+        }
+      &::before {
+        content:'';
+        position: absolute;
+        width:100%;
+        height: 10px;
+        bottom: -2px;
+        left: 5px;
+        display:inline-block;
+        opacity: 0.3;
+        transition: $transition;
+        
+      }
 }
 
 .portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
@@ -61,17 +78,30 @@
   .portfolio__link {
     color:$secondColor;
     margin-right: 50px;
-    border-bottom: 2px solid $fourthColor;
-
     @include mqTablet {
       margin: 0px 20px;
     }
-        
     &:hover,&:focus {
-      color: lighten($secondColor, 35%);
-      border-bottom: 2px solid lighten($fourthColor, 35%);
-
+      color: lighten($secondColor, 25%);
     }
+    &:hover::before,
+    &:focus::before {
+        opacity: 0.4;
+        height: 5px;
+        left: -10px;
+        }
+    &::before {
+      content:'';
+      position: absolute;
+      width:100%;
+      height: 10px;
+      bottom: -2px;
+      left: 5px;
+      display:inline-block;
+      opacity: 0.3;
+      background: $secondColor;
+      transition: $transition;
+      }
   }
 }
 
@@ -87,17 +117,30 @@
   .portfolio__link {
     color:$fourthColor;
     margin-left: 50px;
-  border-bottom: 2px solid $secondColor;
-
     @include mqTablet {
       margin: 0px 20px;
     }
-        
     &:hover,&:focus {
-      color: lighten($fourthColor, 35%);
-      border-bottom: 2px solid lighten($secondColor, 35%);
-
+      color: lighten($fourthColor, 10%);
     }
+    &:hover::before,
+    &:focus::before {
+      opacity: 0.4;
+      height: 5px;
+      left: 10px;
+        }
+      &::before {
+        content:'';
+        position: absolute;
+        width:100%;
+        height: 10px;
+        bottom: -2px;
+        left: -5px;
+        display:inline-block;
+        opacity: 0.3;
+        background: $fourthColor;
+        transition: $transition;
+      }
   }
 }
 
