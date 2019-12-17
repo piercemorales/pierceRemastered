@@ -329,7 +329,7 @@ header .wrapper {
   color: #69725D;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
-  -webkit-text-fill-color: #E4E5E0;
+  color: #e4e5e0;
 }
 
 @media (max-width: 540px) {
@@ -339,7 +339,7 @@ header .wrapper {
 }
 
 .nav__link:hover, .nav__link:focus {
-  -webkit-text-fill-color: #8f947f;
+  color: #8f947f;
 }
 
 .nav__item {
@@ -384,7 +384,7 @@ header .wrapper {
 }
 
 .headerContainer__h1, .headerContainer__h2, .headerContainer__description, .headerContainer__link {
-  color: #E4E5E0;
+  color: #e4e5e0;
 }
 
 .headerContainer__h1 {
@@ -478,7 +478,7 @@ header .wrapper {
 }
 
 .aboutContainer__text a {
-  color: #AF890A;
+  color: #af890a;
 }
 
 .aboutContainer__btn {
@@ -617,7 +617,7 @@ header .wrapper {
 }
 
 .portfolio__2, .portfolio__4 {
-  color: #AF890A;
+  color: #af890a;
   text-align: right;
 }
 
@@ -632,7 +632,7 @@ header .wrapper {
 }
 
 .portfolio__2 .portfolio__link, .portfolio__4 .portfolio__link {
-  color: #AF890A;
+  color: #af890a;
   margin-left: 50px;
 }
 
@@ -856,13 +856,12 @@ header .wrapper {
   background: none;
   border: none;
   padding: 10px;
-  -webkit-box-shadow: -1.5px 1.5px 0px 0px #69725D;
-          box-shadow: -1.5px 1.5px 0px 0px #69725D;
+  border-bottom: 2px solid #69725D;
 }
 
 .contact__input:focus {
-  -webkit-box-shadow: 0px 0px 0px 2px #69725D;
-          box-shadow: 0px 0px 0px 2px #69725D;
+  background: rgba(105, 114, 93, 0.692);
+  color: #222;
 }
 
 .contact__input::-webkit-input-placeholder {
@@ -884,6 +883,7 @@ header .wrapper {
 .contact__input--message {
   width: 100%;
   resize: none;
+  border: 2px solid #69725D;
 }
 
 .upperForm {
@@ -945,7 +945,7 @@ header .wrapper {
   font-family: "titling-gothic-fb-wide", sans-serif;
   font-weight: 200;
   font-size: 1rem;
-  color: #E4E5E0;
+  color: #e4e5e0;
   text-transform: uppercase;
   padding: 50px 0px;
 }
@@ -996,7 +996,7 @@ header .wrapper {
 }
 
 .socialList__link {
-  color: #E4E5E0;
+  color: #e4e5e0;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }

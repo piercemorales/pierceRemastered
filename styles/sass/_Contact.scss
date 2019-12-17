@@ -45,10 +45,11 @@
   background: none;
   border: none;
   padding: 10px;
-  box-shadow: -1.5px 1.5px 0px 0px $secondColor;
+  border-bottom: 2px solid $secondColor;
 
   &:focus {
-    box-shadow: 0px 0px 0px 2px $secondColor;
+    background: rgba(105, 114, 93, 0.692);
+    color: #222;
   }
   &::placeholder {
     opacity: 1;
@@ -56,6 +57,7 @@
   &--message {
     width: 100%;
     resize: none;
+    border: 2px solid $secondColor;
   }
 }
 .upperForm {
