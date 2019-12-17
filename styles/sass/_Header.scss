@@ -118,32 +118,10 @@ header {
     }
     &:hover,
     &:focus {
-      color: lighten($thirdColor, 10%);
-          img {
-            filter: saturate(10%) opacity(50%);
-          }
-      }
-      &:hover::before,
-      &:focus::before {
-        opacity: 0.4;
-        left: -10px;
-        height: 5px;
-        }
-      &::before {
-        content:'';
-        position: absolute;
-        width:100%;
-        height: 10px;
-        bottom: -2px;
-        left: 5px;
-        background: $thirdColor;
-        display:inline-block;
-        opacity: 0.3;
-        transition: $transition;
+      color: #fac820;
       }
     img {
       height: 13px;
-      transition: $transition;  
       margin-left: 10px;
 
     }
