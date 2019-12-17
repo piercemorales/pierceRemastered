@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+	overflow: hidden;
+
   img {
     width: 100%;
   }
@@ -19,6 +21,7 @@
 }
 
 .portfolio__1, .portfolio__2, .portfolio__3, .portfolio__4 {
+
   display: flex;
   flex-direction: row;
   padding: 100px 0px;
