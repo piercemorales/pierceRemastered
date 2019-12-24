@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   // Animate on Scroll 
   AOS.init({
-    duration: 2000,
+    duration: 1200,
     disable: 'phone'
   });
 
